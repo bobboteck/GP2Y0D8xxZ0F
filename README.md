@@ -1,0 +1,2 @@
+# GP2Y0D8xxZ0F
+A board designed with KiCAD for SHARP sensor GP2Y0D805Z0F, GP2Y0D810Z0F and GP2Y0D815Z0F
