@@ -29,16 +29,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:GP2Y0D81xZ0F-cache
+LIBS:GP2Y0D8xxZ0F-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "GP2Y0D8xxZ0F Board"
+Date "2016-05-01"
+Rev "1"
+Comp "Roberto D'Amico (Bobboteck)"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -140,7 +140,7 @@ $Comp
 L Led_Small D1
 U 1 1 56E5E6B0
 P 5950 3800
-F 0 "D1" V 5950 3650 50  0000 L CNN
+F 0 "D1" V 5850 3700 50  0000 L CNN
 F 1 "Led" H 5775 3700 50  0001 L CNN
 F 2 "LEDs:LED_1206" V 5950 3800 50  0001 C CNN
 F 3 "" V 5950 3800 50  0000 C CNN

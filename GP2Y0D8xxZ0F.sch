@@ -29,16 +29,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:GP2Y0D81xZ0F-cache
+LIBS:GP2Y0D8xxZ0F-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "GP2Y0D8xxZ0F Board"
+Date "2016-05-01"
+Rev "1"
+Comp "Officine Robotiche - Roberto D'Amico (Bobboteck)"
 Comment1 ""
 Comment2 ""
 Comment3 ""
