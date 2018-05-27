@@ -14,7 +14,7 @@ On the board is present a solder Jumper (JP1), you can close it with solder to s
 ## PCB design
 ![View of Front Board](https://github.com/bobboteck/GP2Y0D8xxZ0F/blob/master/images/scheda-sensore-top.png "View of Front PCB")
 
-
+How explained before, the PCB design was tinked not for a small possible size, but to leave, to those who will have to mount it, the freedom to choose whether to use SMD or PTH components.
 The following picture is a 3D render of PCB, not all component have a 3D module, but you can see the board design.
 
 ![3D render](https://github.com/bobboteck/GP2Y0D8xxZ0F/blob/master/images/GP2Y0D8xxZ0F.jpg "3D render")
@@ -23,4 +23,5 @@ The following picture is a 3D render of PCB, not all component have a 3D module,
 I have designed a specific support for this card, to be printed with a 3D printer, to achieve a stable fixing of the sensor. You can see it on [Tinkercad](https://www.tinkercad.com/things/4nSgSBEPW0j).
 
 ![Board support](https://github.com/bobboteck/GP2Y0D8xxZ0F/blob/master/images/GP2Y0D8xxZ0F-3D-Support.png "Board support")
+
 ***Warning!*** *Currently I have not yet done a 3D printing test*
