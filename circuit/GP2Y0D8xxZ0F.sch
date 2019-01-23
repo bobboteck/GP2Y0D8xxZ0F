@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:gp2y0d81xz0f
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:GP2Y0D8xxZ0F-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GP2Y0D81xZ0F U1
+L GP2Y0D8xxZ0F-rescue:GP2Y0D81xZ0F U1
 U 1 1 56E5E3CE
 P 4600 3500
 F 0 "U1" H 4300 4050 60  0000 C CNN
@@ -62,7 +32,7 @@ Wire Wire Line
 Wire Wire Line
 	3950 3100 4050 3100
 $Comp
-L R R1
+L Device:R R1
 U 1 1 56E5E48F
 P 3950 3750
 F 0 "R1" H 4050 3750 50  0000 C CNN
@@ -77,12 +47,12 @@ Wire Wire Line
 Wire Wire Line
 	3950 3500 3950 3600
 Wire Wire Line
-	3950 3900 3950 4200
+	3950 3900 3950 4000
 Wire Wire Line
 	4050 4000 3950 4000
 Connection ~ 3950 4000
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 56E5E542
 P 3950 4200
 F 0 "#PWR01" H 3950 3950 50  0001 C CNN
@@ -93,7 +63,7 @@ F 3 "" H 3950 4200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 56E5E58C
 P 5950 3300
 F 0 "R2" H 6050 3300 50  0000 C CNN
@@ -104,7 +74,7 @@ F 3 "" H 5950 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C1
+L Device:C_Small C1
 U 1 1 56E5E5BF
 P 5550 3850
 F 0 "C1" H 5560 3920 50  0000 L CNN
@@ -115,7 +85,7 @@ F 3 "" H 5550 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C2
+L Device:C_Small C2
 U 1 1 56E5E620
 P 6300 3300
 F 0 "C2" H 6310 3370 50  0000 L CNN
@@ -126,7 +96,7 @@ F 3 "" H 6300 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L Device:C_Small C3
 U 1 1 56E5E683
 P 6650 3300
 F 0 "C3" H 6660 3370 50  0000 L CNN
@@ -137,7 +107,7 @@ F 3 "" H 6650 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D1
+L GP2Y0D8xxZ0F-rescue:Led_Small D1
 U 1 1 56E5E6B0
 P 5950 3800
 F 0 "D1" V 5850 3700 50  0000 L CNN
@@ -148,7 +118,7 @@ F 3 "" V 5950 3800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5150 3100 7350 3100
+	5150 3100 5250 3100
 Wire Wire Line
 	5250 3100 5250 3300
 Wire Wire Line
@@ -156,7 +126,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 3700 5550 3700
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 56E5E8E4
 P 6300 4200
 F 0 "#PWR02" H 6300 3950 50  0001 C CNN
@@ -178,13 +148,13 @@ Wire Wire Line
 	6300 3200 6300 3100
 Connection ~ 6300 3100
 Wire Wire Line
-	6300 3400 6300 4200
+	6300 3400 6300 4150
 Connection ~ 5950 4150
 Wire Wire Line
 	6650 4150 6650 3400
 Connection ~ 6300 4150
 $Comp
-L CONN_01X04 P1
+L GP2Y0D8xxZ0F-rescue:CONN_01X04 P1
 U 1 1 56E5EB6E
 P 7550 3250
 F 0 "P1" H 7550 3500 50  0000 C CNN
@@ -201,7 +171,7 @@ Wire Wire Line
 	7300 3400 7300 4150
 Connection ~ 6650 4150
 $Comp
-L Jumper_NO_Small JP1
+L Device:Jumper_NO_Small JP1
 U 1 1 56E5EEA5
 P 5500 3300
 F 0 "JP1" V 5500 3400 50  0000 C CNN
@@ -235,11 +205,11 @@ Enable
 Wire Wire Line
 	5550 3950 5550 4150
 Wire Wire Line
-	5550 4150 7300 4150
+	5550 4150 5950 4150
 Wire Wire Line
 	5550 3700 5550 3750
 $Comp
-L VCC #PWR03
+L power:VCC #PWR03
 U 1 1 56E5F591
 P 5950 3000
 F 0 "#PWR03" H 5950 2850 50  0001 C CNN
@@ -250,5 +220,27 @@ F 3 "" H 5950 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 3000 5950 3150
+	5950 3000 5950 3100
+Wire Wire Line
+	3950 4000 3950 4200
+Wire Wire Line
+	5250 3100 5500 3100
+Wire Wire Line
+	5950 3100 5950 3150
+Wire Wire Line
+	5950 3100 6300 3100
+Wire Wire Line
+	6300 3100 6650 3100
+Wire Wire Line
+	5950 4150 6300 4150
+Wire Wire Line
+	6300 4150 6300 4200
+Wire Wire Line
+	6300 4150 6650 4150
+Wire Wire Line
+	6650 3100 7350 3100
+Wire Wire Line
+	6650 4150 7300 4150
+Wire Wire Line
+	5500 3100 5950 3100
 $EndSCHEMATC

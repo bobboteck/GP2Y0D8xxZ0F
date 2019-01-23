@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name GP2Y0D8xxZ0F-rescue)(type Legacy)(uri ${KIPRJMOD}/GP2Y0D8xxZ0F-rescue.lib)(options "")(descr ""))
+)
