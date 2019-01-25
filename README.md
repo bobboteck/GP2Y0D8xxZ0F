@@ -8,7 +8,7 @@ Then we decided to create a board for PTH components, but on the way, thanks to 
 ![Schema](https://github.com/bobboteck/GP2Y0D8xxZ0F/blob/master/images/schema.png "Schema")
 
 How you can see on the schema, there are another difference with the commercial solution, the connector have four pin (the commercial product have only 3). The fourth pin is used to command the Enable pin of Sharp sensor, in this way you can activate the sensor only when you need to use it, and conseguently save power.
-Typically the current consumption is between 6 and 10 mA when the Enable pin is put to 0V, consumption drops to 8uA. When the Enable pin is put to 5V, it takes about 2 mS to obtain a valid measurement.
+Typically the current consumption is between 6 and 10 mA, when the Enable pin is put to 0V consumption drops to 8uA. When the Enable pin is put to 5V, it takes about 2 mS to obtain a valid measurement.
 On the board is present a solder Jumper (JP1), you can close it with solder to set the Enable always active, **but REMEBER not to use the connector Enable pin**.
 
 ## PCB design
