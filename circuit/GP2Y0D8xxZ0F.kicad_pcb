@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.0.1)-4")
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.2)-1")
 
   (general
     (thickness 1.6002)
@@ -368,7 +368,7 @@
     (fp_text reference C2 (at 0 -2.5 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 0.1uF (at 5.715 -1.27 90) (layer F.Fab) hide
+    (fp_text value 0.1uF (at 5.715 -1.27 270) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -3.3 -1.6) (end 3.3 -1.6) (layer F.CrtYd) (width 0.05))
@@ -377,13 +377,13 @@
     (fp_line (start 3.3 -1.6) (end 3.3 1.6) (layer F.CrtYd) (width 0.05))
     (fp_line (start 1 -1.475) (end -1 -1.475) (layer F.SilkS) (width 0.15))
     (fp_line (start -1 1.475) (end 1 1.475) (layer F.SilkS) (width 0.15))
-    (pad 1 smd rect (at -2 0 90) (size 2 2.5) (layers F.Cu F.Paste F.Mask)
+    (pad 1 smd rect (at -2 0 270) (size 2 2.5) (layers F.Cu F.Paste F.Mask)
       (net 3 VCC))
-    (pad 2 smd rect (at 2 0 90) (size 2 2.5) (layers F.Cu F.Paste F.Mask)
+    (pad 2 smd rect (at 2 0 270) (size 2 2.5) (layers F.Cu F.Paste F.Mask)
       (net 2 GND))
-    (pad 1 thru_hole circle (at -1.25 0 90) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS)
+    (pad 1 thru_hole circle (at -1.25 0 270) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS)
       (net 3 VCC))
-    (pad 2 thru_hole circle (at 1.25 0 90) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS)
+    (pad 2 thru_hole circle (at 1.25 0 270) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask F.SilkS)
       (net 2 GND))
     (model Capacitors_SMD.3dshapes/C_1210_HandSoldering.wrl
       (at (xyz 0 0 0))
@@ -487,6 +487,10 @@
     )
   )
 
+  (gr_arc (start 71 78.5) (end 71 76) (angle -90) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 91 78.5) (end 93.5 78.5) (angle -90) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 91 98.5) (end 91 101) (angle -90) (layer Edge.Cuts) (width 0.15))
+  (gr_arc (start 71 98.5) (end 68.5 98.5) (angle -90) (layer Edge.Cuts) (width 0.15))
   (dimension 25 (width 0.3) (layer Dwgs.User)
     (gr_text "25.000 mm" (at 62.4 88.5 270) (layer Dwgs.User)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
